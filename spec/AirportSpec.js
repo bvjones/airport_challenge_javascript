@@ -19,4 +19,11 @@ describe('Airport', function() {
     });
   });
 
+  describe('#takeoff', function() {
+    it('a plane takes off', function() {
+      airport.takeoff();
+      expect(airport.planes).not.toContain(plane);
+    });
+  });
+
 });
