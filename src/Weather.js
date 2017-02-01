@@ -1,13 +1,17 @@
 function Weather() {
+  this._stormy = true
 };
 
 Weather.prototype.isStormy = function() {
-  var number = Math.random();
+  var number = Math.random()
 
-  if(this.number > 0.7) {
-    return this.stormy = false
-  }
-  else {
-    return this.stormy = true
+  if(number > 0.5) {
+   this._stormy = false
+  } else {
+   this._stormy = true
   };
+};
+
+Weather.prototype.stormy = function() {
+  return this._stormy
 };
