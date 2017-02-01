@@ -1,10 +1,7 @@
 describe('Airport', function() {
 
-
   var airport = new Airport();
   var plane = new Plane();
-
-
 
   describe('on initialization', function(){
     it('it has an empty array of planes', function(){
