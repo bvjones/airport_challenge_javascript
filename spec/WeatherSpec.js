@@ -4,8 +4,8 @@ describe('Weather', function(){
 
   describe('isStormy', function(){
       it('check if weather is stormy', function(){
-        weather.isStormy()
-        expect(weather.stormy()).toBe(true)
+        spyOn(weather, 'stormy').and.returnValue(false);
+        expect(weather.stormy()).toBe(false)
       });
   });
 });

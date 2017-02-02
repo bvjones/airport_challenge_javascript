@@ -5,10 +5,10 @@ function Weather() {
 Weather.prototype.isStormy = function() {
   var number = Math.random()
 
-  if(number > 0.5) {
-   this._stormy = false
-  } else {
+  if(number > 0.7) {
    this._stormy = true
+  } else {
+   this._stormy = false
   };
 };
 
